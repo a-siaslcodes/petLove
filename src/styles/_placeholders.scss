@@ -1,0 +1,46 @@
+@use "mixins" as mx;
+
+%main-title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 0.96;
+  letter-spacing: -0.03em;
+
+  @include mx.mg("tablet") {
+    font-size: 80px;
+  }
+
+  @include mx.mg("desktop") {
+    font-size: 90px;
+    line-height: 0.97;
+  }
+}
+
+%section-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+
+  @include mx.mg("tablet") {
+    font-size: 54px;
+  }
+}
+
+%item-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+
+  @include mx.mg("tablet") {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+%main-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+}

@@ -1,0 +1,16 @@
+@use "mixins" as mx;
+@use "variables" as var;
+@use "functions" as fn;
+@use "placeholders";
+
+body {
+  @extend %main-text;
+
+  font-family: var.$main-font, sans-serif;
+  color: fn.get-color("dark-base");
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}

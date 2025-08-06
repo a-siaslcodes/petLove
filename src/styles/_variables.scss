@@ -1,0 +1,32 @@
+$breakpoints: (
+  "mobile-min": 320px,
+  // гумова мобільна
+  "mobile": 375px,
+  // адаптивна мобільна
+  "tablet": 768px,
+  // планшети
+  "desktop": 1280px,
+  // десктопи
+  "large-desktop": 1440px,
+  // великі екрани
+  "fullhd": 1920px // Full HD,,,,,,,
+);
+
+$colors: (
+  "dark": #262626,
+  "dark-base": #2b2b2a,
+  "theme-color": #f6b83d,
+  "theme-light": #fff4df,
+  "light": #ffffff,
+  "transparent": transparent,
+  "current": currentColor,
+);
+
+$main-font: "Manrope";
+
+$font-weights: (
+  "Medium": 500,
+  "SemiBold": 600,
+  "Bold": 700,
+  "ExtraBold": 800,
+);
