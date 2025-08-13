@@ -1,0 +1,11 @@
+@use "../../../styles/mixins" as mx;
+
+.logo {
+  width: 74px;
+  height: 20px;
+
+  @include mx.mg("tablet") {
+    width: 105px;
+    height: 28px;
+  }
+}

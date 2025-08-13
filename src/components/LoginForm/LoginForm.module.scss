@@ -1,0 +1,69 @@
+@use "../../styles/mixins" as mx;
+@use "../../styles/variables" as var;
+@use "../../styles/functions" as fn;
+@use "../../styles/placeholders";
+
+.input {
+  @extend %main-text;
+
+  border: 1px solid rgba(38, 38, 38, 0.15);
+  border-radius: 30px;
+  padding: 12px;
+  width: 295px;
+  height: 42px;
+  color: rgba(38, 38, 38, 0.5);
+
+  @include mx.mg("tablet") {
+    padding: 16px;
+    width: 424px;
+    height: 52px;
+
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button {
+  border-radius: 30px;
+  padding: 12px;
+  width: 295px;
+  height: 42px;
+  background-color: fn.get-color("theme-accent");
+
+  @extend %main-text;
+
+  color: fn.get-color("light");
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin-bottom: 40px;
+
+  @include mx.mg("tablet") {
+    padding: 16px;
+    width: 424px;
+    height: 52px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.03em;
+  }
+}
+
+.error {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: fn.get-color("alert");
+
+  @include mx.mg("tablet") {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}

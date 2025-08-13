@@ -1,0 +1,49 @@
+@use "../../styles/mixins" as mx;
+@use "../../styles/variables" as var;
+@use "../../styles/functions" as fn;
+@use "../../styles/placeholders";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text {
+  @extend %main-text;
+  margin-bottom: 24px;
+
+  @include mx.mg("tablet") {
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+
+    margin-bottom: 32px;
+  }
+}
+
+.subText {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: rgba(38, 38, 38, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formBox {
+  padding: 55px 20px;
+  background-color: fn.get-color("light");
+  border-radius: 30px;
+
+  @include mx.mg("tablet") {
+    padding: 71px 140px;
+  }
+}
+
+.accent {
+  color: fn.get-color("theme-accent");
+}

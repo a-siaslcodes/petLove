@@ -9,15 +9,17 @@ $breakpoints: (
   // десктопи
   "large-desktop": 1440px,
   // великі екрани
-  "fullhd": 1920px // Full HD,,,,,,,
+  "fullhd": 1920px // Full HD,,,,,,,,,,,,
 );
 
 $colors: (
   "dark": #262626,
   "dark-base": #2b2b2a,
-  "theme-color": #f6b83d,
+  "theme-accent": #f6b83d,
   "theme-light": #fff4df,
+  "theme-main": #f9f9f9,
   "light": #ffffff,
+  "alert": #ef2447,
   "transparent": transparent,
   "current": currentColor,
 );

@@ -1,0 +1,13 @@
+@use "../../styles/mixins" as mx;
+@use "../../styles/variables" as var;
+@use "../../styles/functions" as fn;
+@use "../../styles/placeholders";
+
+.sectionTitle {
+  @extend %section-title;
+  margin-bottom: 12px;
+
+  @include mx.mg("tablet") {
+    margin-bottom: 16px;
+  }
+}

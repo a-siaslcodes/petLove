@@ -1,0 +1,30 @@
+@use "../../styles/mixins" as mx;
+@use "../../styles/variables" as var;
+@use "../../styles/functions" as fn;
+@use "../../styles/placeholders";
+
+.imgBlock {
+  background-image: url("/src/img/login-s.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 335px;
+  height: 280px;
+  border-radius: 30px;
+  display: block;
+
+  @include mx.mg("tablet") {
+    background-image: url("/src/img/login-m.jpg");
+    border-radius: 60px;
+
+    max-width: 706px;
+    height: 302px;
+  }
+
+  @include mx.mg("desktop") {
+    background-image: url("/src/img/login-l.jpg");
+
+    max-width: 592px;
+    height: 654px;
+  }
+}
