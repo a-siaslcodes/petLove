@@ -7,6 +7,15 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @include mx.mg("tablet") {
+    gap: 16px;
+  }
+
+  @include mx.mg("desktop") {
+    flex-direction: row;
+    gap: 32px;
+  }
 }
 
 .text {
@@ -38,9 +47,23 @@
   padding: 55px 20px;
   background-color: fn.get-color("light");
   border-radius: 30px;
+  // max-width: 335px;
+  height: 422px;
 
   @include mx.mg("tablet") {
+    border-radius: 60px;
+
     padding: 71px 140px;
+    width: 704px;
+    height: 560px;
+  }
+
+  @include mx.mg("desktop") {
+    border-radius: 60px;
+
+    padding: 118px 84px;
+    width: 592px;
+    height: 654px;
   }
 }
 

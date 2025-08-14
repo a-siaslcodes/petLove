@@ -9,6 +9,7 @@ body {
 
   font-family: var.$main-font, sans-serif;
   color: fn.get-color("dark-base");
+  padding: 32px;
 }
 
 button {
